@@ -1,0 +1,15 @@
+server:
+  port: 8008
+
+spring:
+  devtools:
+    livereload:
+      enabled: true
+#  profiles:
+#    active : DEV
+
+  data:
+    mongodb:
+      uri: mongodb://localhost:27018/retailitemservice
+      repositories:
+        type: AUTO
