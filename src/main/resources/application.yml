@@ -1,15 +1,16 @@
-server:
-  port: 8008
-
 spring:
+  application:
+    name: ws-retail-orderservice
   devtools:
     livereload:
       enabled: true
-#  profiles:
-#    active : DEV
+  #  profiles:
+  #    active : DEV
 
   data:
     mongodb:
-      uri: mongodb://localhost:27018/retailitemservice
+      uri: mongodb://localhost:27017/reach-engine
+      username: root
+      password: rootpassword
       repositories:
         type: AUTO
